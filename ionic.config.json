@@ -1,0 +1,7 @@
+{
+  "name": "G6_KurmannCyril_Uebungen",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
