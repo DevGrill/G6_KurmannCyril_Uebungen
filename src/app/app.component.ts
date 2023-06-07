@@ -6,13 +6,57 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/spam', icon: 'warning' },
+    {
+      title: 'Navigation',
+      url: '/navigation',
+      icon: 'navigate',
+    },
+    {
+      title: 'Navigation Detail',
+      url: '/navigation-detail',
+      icon: 'navigate',
+    },
+    {
+      title: 'Zahlen',
+      url: '/zahlen',
+      icon: 'calculator',
+    },
+    {
+      title: 'String',
+      url: '/string',
+
+      icon: 'text',
+    },
+    {
+      title: 'Objekte',
+      url: '/objekte',
+      icon: 'cube',
+    },
+    {
+      title: 'Array',
+      url: '/array',
+      icon: 'list',
+    },
+    {
+      title: 'Data Binding',
+      url: '/data-binding',
+      icon: 'list',
+    },
+    {
+      title: 'Rechner',
+      url: '/rechner',
+      icon: 'calculator',
+    },
+    {
+      title: 'Filters',
+      url: '/filters',
+      icon: 'list',
+    },
+    {
+      title: 'Pipe',
+      url: '/pipe',
+      icon: 'list',
+    },
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
   constructor() {}
 }

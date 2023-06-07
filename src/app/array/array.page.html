@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Array</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Array</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <p>Fruechte 1</p>
+  <div *ngFor="let fruecht of this.fruechte">{{fruecht.name}}</div>
+  <br />
+  <p>Fruechte 2</p>
+  <ion-chip *ngFor="let fruecht of this.fruechte2">
+    <ion-avatar>
+      <img src="{{fruecht.imgUrl}}" />
+    </ion-avatar>
+    <ion-label>{{fruecht.name}}</ion-label>
+  </ion-chip>
+</ion-content>

@@ -1,0 +1,45 @@
+<ion-header [translucent]="true">
+  <ion-back-button></ion-back-button>
+  <ion-toolbar>
+    <ion-title>DataBinding</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">DataBinding</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Name</ion-label>
+          <ion-input type="text" [(ngModel)]="this.name"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Vorname</ion-label>
+          <ion-input type="text" [(ngModel)]="this.vorname"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-item>
+          <ion-label position="floating">Alter</ion-label>
+          <ion-input type="number" [(ngModel)]="this.alter"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <p *ngIf="this.name !== '' && this.vorname !== '' && this.alter !== null">
+    Mein Name ist: {{ this.name }} {{ this.vorname }} und ich bin {{ this.alter
+    }} Jahre alt.
+  </p>
+</ion-content>

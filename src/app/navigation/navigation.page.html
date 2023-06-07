@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-back-button></ion-back-button>
+  <ion-toolbar>
+    <ion-title>Navigation</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Navigation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-input placeholder="value" [(ngModel)]="this.value"></ion-input>
+  <ion-button expand="block" (click)="this.routeWithValue()"
+    >Navigation Detail with value</ion-button
+  >
+
+  <ion-button expand="block" (click)="this.routeByURL()"
+    >Navigation Detail with URL</ion-button
+  >
+</ion-content>

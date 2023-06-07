@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { FolderPageRoutingModule } from './folder-routing.module';
+import { ZahlenPageRoutingModule } from './zahlen-routing.module';
 
-import { FolderPage } from './folder.page';
+import { ZahlenPage } from './zahlen.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    FolderPageRoutingModule
+    ZahlenPageRoutingModule
   ],
-  declarations: [FolderPage]
+  declarations: [ZahlenPage]
 })
-export class FolderPageModule {}
+export class ZahlenPageModule {}

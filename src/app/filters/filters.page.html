@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Filters</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Filters</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <h2>uppercase</h2>
+  <p>
+    Dieser lowercase String: "{{this.lowercase}}" wird zu "{{this.lowercase |
+    uppercase}}"
+  </p>
+
+  <h2>lowercase</h2>
+  <p>
+    Dieser uppercase String: "{{this.uppercase}}" wird zu "{{this.uppercase |
+    lowercase}}"
+  </p>
+
+  <h2>date</h2>
+  <p>
+    Dieses Datum: "{{this.date}}" wird zu "{{this.date | date: 'M/d/yyyyh:mm:ss'
+    }}"
+  </p>
+</ion-content>
