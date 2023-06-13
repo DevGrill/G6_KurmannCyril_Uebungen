@@ -61,7 +61,12 @@ export class AppComponent {
       title: 'Alerts',
       url: '/alerts',
       icon: 'alert',
-    }
+    },
+    {
+      title: 'Newsletter',
+      url: '/newsletter',
+      icon: 'mail',
+    },
   ];
   constructor() {}
 }
