@@ -57,6 +57,11 @@ export class AppComponent {
       url: '/pipe',
       icon: 'list',
     },
+    {
+      title: 'Alerts',
+      url: '/alerts',
+      icon: 'alert',
+    }
   ];
   constructor() {}
 }

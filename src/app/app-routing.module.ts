@@ -68,6 +68,10 @@ const routes: Routes = [
     path: 'pipe',
     loadChildren: () => import('./pipe/pipe.module').then( m => m.PipePageModule)
   },
+  {
+    path: 'alerts',
+    loadChildren: () => import('./alerts/alerts.module').then( m => m.AlertsPageModule)
+  },
 ];
 
 @NgModule({
